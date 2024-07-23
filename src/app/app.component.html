@@ -1,0 +1,119 @@
+
+  <!-- <mat-toolbar color="primary">
+    <span>Messaging App</span>
+  </mat-toolbar><br><br>
+    <div class="container">
+      <div class="messages mat-elevation-z5">
+        <h1>Messages</h1>
+        <div class="chat-area2">
+          <div *ngFor="let message of message$|async">
+
+              <div *ngIf="message.name === user">
+                <div class="chat-bubble">
+                <div class="username">{{message.name}}</div>
+                {{message.message}}
+                  <span class="chat-date">
+                    {{ message.timestamp.toDate() | date: 'yyyy-MM-dd hh:mm:ss'}}
+                  </span>
+              </div>
+              </div>
+
+              <div class="left" *ngIf="message.name != user">
+                <div class="chat-right">
+                <div class="username">{{message.name}}</div>
+                {{message.message}}
+                  <span class="chat-date">
+                    {{ message.timestamp.toDate() | date: 'yyyy-MM-dd hh:mm:ss'}}
+                  </span>
+            </div>
+
+          </div>
+        </div>
+      </div><br>
+    </div>
+  </div><br><br>
+  <div class="input-area">
+    <mat-form-field appearance="outline">
+      <input matInput size=50 placeholder="Enter your message...." (keyup.enter)="onEnterHandler($event)" style="width: 200px;">
+        <mat-icon matSuffix>send</mat-icon>
+    </mat-form-field> -->
+
+ <!-- <mat-toolbar color="primary">
+  <span>Messaging App</span>
+</mat-toolbar><br><br>
+<div class="container">
+  <div class="messages">
+    <div class="chat-area2">
+    <div *ngFor="let message of message$|async">
+      <div class="chat-bubble">
+      <div *ngIf="message.name === user">
+                <div class="username">
+                  {{message.name}}
+                </div>
+                {{message.message}}
+                  <span class="chat-date">
+                    {{ message.timestamp.toDate() | date: 'yyyy-MM-dd hh:mm:ss'}}
+                  </span>
+      </div>
+      </div>
+      <div class="chat-right">
+        <div class="left" *ngIf="message.name != user">
+          <div class="username">{{message.name}}</div>
+           {{message.message}}
+              <span class="chat-date">
+                {{ message.timestamp.toDate() | date: 'yyyy-MM-dd hh:mm:ss'}}
+              </span>
+          </div>
+        </div>
+      </div>
+    </div><br>
+  </div>
+<br><br>
+<div class="input-area">
+  <mat-form-field appearance="outline">
+    <input matInput size=50 placeholder="Enter your message...." (keyup.enter)="onEnterHandler($event)" style="width: 200px;">
+      <mat-icon matSuffix>send</mat-icon>
+  </mat-form-field>-->
+<mat-toolbar>
+  <div class="navbar">Messaging Application</div>
+</mat-toolbar>
+<div class="container">
+  <div class="chat-area2">
+    <div *ngFor="let message of message$|async">
+
+      <div *ngIf="message.name === user">
+        <div class="text">
+        <div class="chat-bubble">
+                <div class="username1">
+                  {{message.name}}
+                </div>
+                {{message.message}}
+                  <span class="chat-date">
+                    {{ message.timestamp.toDate() | date: 'yyyy-MM-dd hh:mm:ss'}}
+                  </span>
+      </div>
+      </div>
+    </div>
+
+  <div class="left" *ngIf="message.name != user">
+  <div class="text2">
+    <div class="chat-right">
+    <div class="username2">{{message.name}}</div>
+     {{message.message}}
+        <span class="chat-date">
+          {{ message.timestamp.toDate() | date: 'yyyy-MM-dd hh:mm:ss'}}
+        </span>
+    </div>
+  </div>
+  </div>
+</div><br>
+</div>
+</div><br>
+<div class="input">
+  <mat-form-field appearance="outline">
+  <input type="text" matInput placeholder="Enter your message....."  #name/>
+</mat-form-field>
+  <div class="btn">
+  <mat-icon matSuffix (click) = "con(name.value)">send</mat-icon>
+</div>
+</div>

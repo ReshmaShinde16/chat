@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "chatroom-fef39": {
+      "hosting": {
+        "chat-app": [
+          "chatroom-fef39"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "chatroom-fef39"
+  }
+}

@@ -1,0 +1,17 @@
+p {
+  font-family: Lato;
+}
+.btn {
+  height: 50px;
+  width: 100px;
+  margin-left: 10px;
+}
+.outer-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  margin-top: 10px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}

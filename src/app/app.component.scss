@@ -1,0 +1,341 @@
+// mat-toolbar{
+//   padding: 20px;
+//   margin:0;
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+// .container{
+//   display: flex;
+//   height: 50%
+// }
+// .messages{
+//   width: 80%;
+//   margin:auto;
+//   background-color:  rgb(180, 209, 241);
+//   border-radius: 16px;
+//   overflow: auto;
+//   display: block;
+//   text-align: center;
+//   justify-content: center;
+// }
+// .chat-bubble-container{
+//   display: flex;
+//   width: 100%;
+//   justify-content: flex-start;
+// }
+
+// .chat-area{
+//   height: calc(100vh - 270px);
+//   display: flex;
+//   flex-direction: column;
+// }
+// // .chat-area > :first-child{
+// //   margin-top: auto;
+// // }
+
+// .chat-area2{
+//   height: calc(100vh - 270px);
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// // .chat-area2 > :first-child{
+// //   margin-top: auto;
+// // }
+// .chat-date{
+
+//   bottom: 2px;
+//   right: 8px;
+//   font-size: 0.7rem;
+//   color: rgba($color: #000000, $alpha: 1.0);
+// }
+//  .input-area{
+//   //text-align: center;
+//   display: block;
+//   margin: auto;
+//  }
+
+// // .chat-bubble-container.sender {
+// //   justify-content: flex-end;
+// // }
+
+// // .chat-bubble-container.sender > .chat-bubble{
+// //   background: blue($color: #000000);
+// // }
+// mat-form-field{
+//   width: 500px;
+// }
+
+// .chat-bubble3{
+//   font-size: 30px;
+//  color: red;
+//   background: white;
+//   width: fit-content;
+//   position: right;
+// }
+// .left-chat{
+//   position: left;
+// }
+// .left{
+// float: right;
+// }
+// .username{
+//   color:red;
+//   font-size: 10px;
+
+// }
+// .chat-right{
+//   background: white;
+//   padding-top: 8px;
+//   padding-right: 8px;
+//   padding-left: 100px;
+//   margin-bottom: 16px;
+//   padding-bottom: 18px;
+//   border-radius: 8px;
+//   width: fit-content;
+//   float: right;
+// }
+// .chat-bubble{
+//   background: white;
+//   padding-top: 8px;
+//   padding-bottom: 18px;
+//   padding-left: 8px;
+//   padding-right: 100px;
+//   margin-bottom: 16px;
+//   border-radius: 8px;
+//   width: fit-content;
+
+// }
+
+// .chat-right{
+//    background: white;
+//   padding-top: 8px;
+//   padding-right: 8px;
+//   padding-left: 100px;
+//   margin-bottom: 16px;
+//   padding-bottom: 18px;
+//   border-radius: 8px;
+//   width: fit-content;
+//   float: right;
+// }
+// .left{
+// float: right;
+
+// }
+// .chat-area2{
+//   height: calc(100vh - 270px);
+//   display: flex;
+//   flex-direction: column;
+// }
+
+
+
+
+
+
+ @media screen and (max-width: 1200px) {
+
+.container{
+  height: 550px;
+  width: 80%;
+  background-color: rgb(224, 234, 231);
+  border-radius: 25px;
+  display: flex;
+  margin-top: 20px;
+  //flex-wrap: wrap;
+  overflow: auto;
+  margin-top: 15px;
+}
+.mat-toolbar{
+  background-color: rgb(34, 119, 34);
+  color: white;
+  font-size: 30px;
+}
+mat-form-field{
+  display: flex;
+  width: 500px;
+  text-align: center;
+}
+.input{
+  font-size: 500px;
+  margin-left: 500px;
+  display: flex;
+}
+mat-icon{
+  color: white;
+  transform: scale(1.5);
+  align-self: center;
+  flex: 1;
+}
+.btn{
+  display: flex;
+  border-radius: 50%;
+  background-color: rgb(9, 74, 9);
+  height: 55px;
+  width: 55px;
+}
+.chat-bubble{
+  font-size: 15px;
+  display: block;
+  border-radius: 16px;
+  overflow: hidden;
+  text-align: right;
+  overflow: hidden;
+  margin: 8px;
+
+}
+.chat-right{
+  font-size: 15px;
+  display: block;
+  border-radius: 16px;
+  overflow: auto;
+  text-align: left;
+  overflow: auto;
+  margin: 8px;
+}
+.text{
+  display: flex;
+  background-color: rgb(244, 254, 213);
+  flex:1;
+  width:200px;
+  margin-left: 990px;
+  border-radius: 14px;
+  overflow: auto;
+  margin-bottom: 7px;
+}
+.text2{
+  display: flex;
+  background-color: white;
+  flex: 1;
+  width:200px;
+  border-radius: 14px;
+  overflow: auto;
+  margin: 7px;
+}
+.username1{
+  font-size: 12px;
+  color: red;
+  text-align: left;
+
+}
+.username2{
+  font-size: 12px;
+  color: red;
+}
+.chat-date{
+  bottom: 2px;
+  right: 8px;
+  font-size: 0.7rem;
+  color: rgba($color: #000000, $alpha: 1.0);
+}
+.chat-area2{
+  flex: display;
+}
+ }
+
+// @media screen and (max-width: 800px) {
+//   .container, .chat-bubble, .chat-right, .text, .text2{
+//     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+//   }
+
+@media screen and (min-width: 1200px) {
+  .container{
+    height: 550px;
+    width: 80%;
+    background-color: rgb(224, 234, 231);
+    border-radius: 25px;
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    overflow: auto;
+    margin-top: 15px;
+  }
+  .mat-toolbar{
+    background-color: rgb(34, 119, 34);
+    color: white;
+    font-size: 30px;
+  }
+  mat-form-field{
+    display: flex;
+    width: 500px;
+    text-align: center;
+  }
+  .input{
+    font-size: 500px;
+    margin-left: 500px;
+    display: flex;
+
+
+  }
+  mat-icon{
+    color: white;
+    transform: scale(1.5);
+    align-self: center;
+    flex: 1;
+  }
+  .btn{
+    display: flex;
+    border-radius: 50%;
+    background-color: rgb(9, 74, 9);
+    height: 55px;
+    width: 55px;
+  }
+  .chat-bubble{
+    font-size: 15px;
+    display: block;
+    border-radius: 16px;
+    overflow: hidden;
+    text-align: right;
+    overflow: hidden;
+    margin: 8px;
+
+  }
+  .chat-right{
+    font-size: 15px;
+    display: block;
+    border-radius: 16px;
+    overflow: auto;
+    text-align: left;
+    overflow: auto;
+    margin: 8px;
+  }
+  .text{
+    display: flex;
+    background-color: rgb(244, 254, 213);
+    flex:1;
+    width:200px;
+    margin-left: 990px;
+    border-radius: 14px;
+    overflow: auto;
+    margin-bottom: 7px;
+  }
+  .text2{
+    display: flex;
+    background-color: white;
+    flex: 1;
+    width:200px;
+    border-radius: 14px;
+    overflow: auto;
+    margin: 7px;
+  }
+  .username1{
+    font-size: 12px;
+    color: red;
+    text-align: left;
+
+  }
+  .username2{
+    font-size: 12px;
+    color: red;
+  }
+  .chat-date{
+    bottom: 2px;
+    right: 8px;
+    font-size: 0.7rem;
+    color: rgba($color: #000000, $alpha: 1.0);
+  }
+  .chat-area2{
+    flex: display;
+  }
+}
